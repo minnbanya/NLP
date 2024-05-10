@@ -1,0 +1,13 @@
+version: '1'
+services:
+  app:
+    image: minnbanya/nlp-a1
+    ports:
+      - "8000:8000"
+    build: 
+      context: .
+      dockerfile: .Dockerfile
+    volumes:
+      - ./app:/root/app
+      - ./.vscode-server:/root/.vscode-server
+    command: python3 app.py

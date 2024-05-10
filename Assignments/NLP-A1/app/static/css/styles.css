@@ -1,0 +1,31 @@
+/* Add this style block in the head section of your HTML file */
+
+button.btn-custom {
+    background-color: rgb(197, 19, 173); /* Replace #your_custom_color with your desired color code */
+    border-color: rgb(0, 0, 0); /* Set the border color if needed */
+    color: #ffffff; /* Set the text color */
+}
+
+/* Optional: Change the color on hover or focus */
+button.btn-custom:hover,
+button.btn-custom:focus {
+    background-color: rgb(255, 0, 221); /* Replace #your_hover_color with your desired hover color code */
+    border-color: rgb(0, 0, 0);
+}
+
+table {
+    border: 2px solid black;
+    background-color: #6e6c6c; /* Gray background color */
+    width: 100%;
+    margin-top: 10px; /* Add some margin for better spacing */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+}
+
+td.parameter {
+    border-right: 2px solid black; /* Add a border to the right of parameter column */
+}

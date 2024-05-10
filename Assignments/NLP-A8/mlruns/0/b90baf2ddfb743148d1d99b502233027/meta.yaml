@@ -1,0 +1,15 @@
+artifact_uri: file:///c:/Studies/AIT/2nd%20semester/NLP/Assignments/NLP-A8/mlruns/0/b90baf2ddfb743148d1d99b502233027/artifacts
+end_time: 1711379611010
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b90baf2ddfb743148d1d99b502233027
+run_name: tmp_trainer
+run_uuid: b90baf2ddfb743148d1d99b502233027
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1711379204886
+status: 3
+tags: []
+user_id: minnb

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <style>
+        body {
+            color: grey !important;
+            background-color: grey !important;
+            background-image: url('./static/image/sherlock-background-2.png');
+            background-repeat: no-repeat;
+            background-size: cover; 
+            background-position: left top; 
+        }
+    </style> -->
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    {% include "navbar.html" %}
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="padding-top: 150px;">
+            <div class="col-md-6">
+                <h1 class="text-center" style="color: rgb(0, 0, 0);">Sentence similarity</h1>
+                <!-- User Instructions -->
+                <p class="text-center" style="color: rgb(0, 0, 0);">
+                    Please enter two sentences to determine their similarity.
+                </p>
+                <!-- User data input -->
+                <form id="data-form" action="/" method="post">
+                    <div class="form-group">
+                        <input type="text" id="sen1" name="sen1" class="form-control" value="{{ sen1 }}" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="sen2" name="sen2" class="form-control" value="{{ sen2 }}" placeholder="">
+                    </div>
+                    <div style="padding-top: 10px;">
+                        <button type="submit" class="btn btn-custom d-block mx-auto">Submit</button>
+                    </div>
+                </form> 
+            </div>
+        </div>
+        <div class="row justify-content-center align-items-center text-center" style="padding-top: 40px; color: rgb(0, 0, 0);">
+            {% if result %}
+                <h3>
+                    The two sentences' similarity score is: {{ result[0] }} !!
+                </h3>
+            {% endif %}
+        </div>        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
